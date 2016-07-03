@@ -1,5 +1,5 @@
 @ECHO OFF
-REM Blocks and unblocks Microsoft servers, including Outlook, Hotmail, Live.com, Bing.com
+REM Uses route comand to block or unblock Microsoft servers, including Outlook, Hotmail, Live.com, Bing.com
 CHOICE /C BU /M "Type [B] to block Microsoft hosts or [U] to unblock Microsoft hosts" /N
 IF %errorlevel%==1 SET _CHOICE=Blocking& SET _ROUTECMD=route -p add
 IF %errorlevel%==2 SET _CHOICE=Unblocking& SET _ROUTECMD=route -p delete
