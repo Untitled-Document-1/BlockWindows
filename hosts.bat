@@ -9,7 +9,7 @@ if not %errorlevel% equ 0 (
     EXIT 1
 ) else (
 
-type %~dp0hosts >> %windir%\system32\Drivers\etc\hosts
+type %~dp0hosts.list >> %windir%\system32\Drivers\etc\hosts
 echo Completed
 pause
 )
