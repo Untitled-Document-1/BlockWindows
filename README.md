@@ -6,16 +6,10 @@ FILES
 
 BlockWindows.bat Right Click and "Run as Admin"
 
-hosts.bat Works with Windows 7 and 8. Appends current hosts file. Run from your Downloads directory.
-Doesn't work on Windows 10, copy hosts file to your router or firewall if using Windows 10
+hosts.bat Works with Windows 7 and 8. Appends to current hosts file. Run from your Downloads directory.
+Doesn't work on Windows 10, copy hosts.list file to your router or firewall if using Windows 10
 
-hosts2.bat Blocks M$ hosts with firewall *BLOCKS most M$ sites OUTLOOK,HOTMAIL,ETC REM any you use*
-
-hosts DNS file of MS hosts to block
-
-hostlist MS Hosts file to blocking for router or firewall use
-
-hosts-dnsmasq Hosts file for dd-wrt and other routers 
+mshosts.bat Blocks MS hosts with firewall *BLOCKS most M$ sites OUTLOOK,HOTMAIL,ETC REM any you use*
 
 HideWindowsUpdates.vbs Hides blocked updates, to reinstall click 'show hidden updates'
 
