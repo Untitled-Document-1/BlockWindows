@@ -7,5 +7,3 @@ if errorlevel 1 ECHO You need to run this script from an elevated command prompt
 
 type %~dp0hosts.list >> %windir%\system32\Drivers\etc\hosts
 echo Completed
-pause
-)
