@@ -6,6 +6,6 @@ CHOICE /C BU /M "Type [B] to block Microsoft hosts or [U] to unblock Microsoft h
 IF %errorlevel%==1 SET _CHOICE=Blocking& SET _ROUTECMD=route -p add
 IF %errorlevel%==2 SET _CHOICE=Unblocking& SET _ROUTECMD=route -p delete
 FOR /F "tokens=1,2 delims=," %%A IN (mshosts.list) DO (
-ECHO. & ECHO %_CHOICE% %%A
-%_ROUTECMD% %%B/32 127.0.0.1
+	ECHO. & ECHO %_CHOICE% %%A
+	%_ROUTECMD% %%B/32 127.0.0.1
 )
