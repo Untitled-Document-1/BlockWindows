@@ -1,10 +1,6 @@
 @echo off
 openfiles.exe 1>nul 2>&1
-if errorlevel 1 (
-    echo You are not administrator! Right Click file select run as admin!
-    pause 1>nul 2>&1
-    EXIT 1
-)
+if errorlevel 1 ECHO You need to run this script from an elevated command prompt. Exiting. && EXIT /B 1
 
 SETLOCAL ENABLEEXTENSIONS ENABLEDELAYEDEXPANSION
 
